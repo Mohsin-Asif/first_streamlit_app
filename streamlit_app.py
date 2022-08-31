@@ -48,3 +48,4 @@ my_cur.execute(f"insert into fruit_load_list (FRUIT_NAME) values (\'{add_my_frui
 my_cur.execute("select * from fruit_load_list")
 my_data_rows = my_cur.fetchall()
 streamlit.dataframe(my_data_rows)
+streamlit.write('Thanks for adding ', add_my_fruit)
